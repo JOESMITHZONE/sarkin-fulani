@@ -9,7 +9,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // viewed at http://localhost:8080
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + '/index.html'));
+    res.sendFile('index.html');
+    //res.sendFile(path.join(__dirname + '/index.html'));
 });
 
 app.listen(3000, function () {
